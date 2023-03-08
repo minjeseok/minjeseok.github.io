@@ -15,6 +15,7 @@ sidebar:
 
 ### 1.1.1 Characteristics of Reinforcement Learning Problem 
 __- Closed-loop이다.__
+
 Closed-loop란 사람의 개입없이 원하는 상태 유지를 위해 시스템을 자동으로 조절하는 방식을 의미한다. 강화학습은 본질적으로 사람과의 상호작용이 없을 뿐더러 학습자의 동작 이후의 결과만이 입력에 영향을 미치게 된다. 
 
 
