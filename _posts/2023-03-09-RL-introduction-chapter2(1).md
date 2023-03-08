@@ -1,3 +1,5 @@
+"강화학습의 바이블이라고 불리는 Richard S. Sutton의 Reinforcement Learning: An Introduction을 공부하고 필자가 이해한 내용과 추가 정보들을 예제와 함께 간략하고 쉽게(?) 설명하는 방식으로 정리해봅니다. 용어 같은 경우, 원문 그대로 사용하겠지만 혹시 모를 번역 오류 및 잘못된 설명에 대한 지적과 보충 환영합니다."
+
 # 2. Multi-arm Bandits (1)
 강화학습은 올바른 action을 지시하는 것이 아니라 취한 action을 평가하는 교육 정보를 사용한다. 이는 좋은 action에 대한 explicit trial-and-error을 위해서 적극적인 explore이 필요한 이유이다. action을 평가하는 방식인 feedback에는 evaluative feedback과 instructive feedback이 있다고 한다. 이번 챕터에서는 오직 하나의 상황에서만 행동하는 단순화된 환경에서 강화학습의 evaluative 측면을 연구하고 이러한 설정은 evaluative feedback이 수행된 설정이며 전체 강화학습 문제의 복잡성을 방지한다. 
 
