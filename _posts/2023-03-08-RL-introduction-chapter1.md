@@ -44,3 +44,8 @@ __- 보상 신호를 포함한 행동의 결과가 장기간에 걸쳐 나타난
 
 ### 1.1.4 Trends in Reinforcement Learning
 강화학습은 엔지니어링 및 과학 분야에서 유익한 상호작용을 거치며 발전해 나가고 있다. 통계, 최적화와 같은 수학적 주제를 넘어 매개변수화된 근사기의 적용과 같은 융합은 여러 패러다임을 열며 모델들의 성능을 향상시켰다. 그러나 과거로부터의 이러한 발전은 각 도메인에 치중하여 많은 특수 절차 및 휴리스틱을 가정했고 이는 일반적인 원칙을 찾지 않아왔다. 최신 AI는 이제 학습과 의사결정의 일반 원칙을 찾고 도메인 지식을 통합하기 위한 노력을 하고 있다. 
+
+
+https://drive.google.com/file/d/1l906U4WOc_AossEWdSbsj52Rc8X0QCYX/view?usp=share_link
+
+[gamer_example](https://drive.google.com/uc?export=view&id=1l906U4WOc_AossEWdSbsj52Rc8X0QCYX)
