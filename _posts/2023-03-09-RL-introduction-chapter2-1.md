@@ -96,7 +96,7 @@ deterministic case에서도 다른 가정을 약화시키면 exploration이 큰 
 
 
 ## 2.3 Incremental Implementation
-지금까지 사용했던 sample average 방식의 action-value 측정 [\ref{1}]은 구현 상, 각 action 선택에 따른 모든 reward 기록을 유지하고 계산하는 것이 일차원적인 방식이나 메모리와 계산 요구 사항이 제한없이 증가하게 되는 문제가 발생한다. 따라서 새로운 reward 처리를 위한 작고 지속적인 계산 방식을 고안한다. 
+지금까지 사용했던 sample average 방식의 action-value 측정 $\ref{1}$은 구현 상, 각 action 선택에 따른 모든 reward 기록을 유지하고 계산하는 것이 일차원적인 방식이나 메모리와 계산 요구 사항이 제한없이 증가하게 되는 문제가 발생한다. 따라서 새로운 reward 처리를 위한 작고 지속적인 계산 방식을 고안한다. 
 
 
 
