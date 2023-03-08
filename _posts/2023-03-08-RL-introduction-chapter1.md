@@ -49,4 +49,3 @@ __- 보상 신호를 포함한 행동의 결과가 장기간에 걸쳐 나타난
     ![gamer_example](https://user-images.githubusercontent.com/127313067/223746028-48f74de6-04e8-4e9c-b7bc-fde1913f4096.jpg)
 </div>
 ![gamer_example](https://user-images.githubusercontent.com/127313067/223746028-48f74de6-04e8-4e9c-b7bc-fde1913f4096.jpg)
-<img class="image image--lg" src="https://user-images.githubusercontent.com/127313067/223746028-48f74de6-04e8-4e9c-b7bc-fde1913f4096.jpg"/>
