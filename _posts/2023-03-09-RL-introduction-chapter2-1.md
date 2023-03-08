@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Page - Sidebar
+title: Chapter 2. Multi-arm Bandits (1)
 aside:
   toc: true
 sidebar:
