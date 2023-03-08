@@ -96,7 +96,7 @@ deterministic case에서도 다른 가정을 약화시키면 exploration이 큰 
 
 
 ## 2.3 Incremental Implementation
-지금까지 사용했던 sample average 방식의 action-value 측정 $\ref{1}$은 구현 상, 각 action 선택에 따른 모든 reward 기록을 유지하고 계산하는 것이 일차원적인 방식이나 메모리와 계산 요구 사항이 제한없이 증가하게 되는 문제가 발생한다. 따라서 새로운 reward 처리를 위한 작고 지속적인 계산 방식을 고안한다. 
+지금까지 사용했던 sample average 방식의 action-value 측정 $(1)$은 구현 상, 각 action 선택에 따른 모든 reward 기록을 유지하고 계산하는 것이 일차원적인 방식이나 메모리와 계산 요구 사항이 제한없이 증가하게 되는 문제가 발생한다. 따라서 새로운 reward 처리를 위한 작고 지속적인 계산 방식을 고안한다. 
 
 
 
@@ -113,7 +113,7 @@ $$  \begin{align*}
 
 
 
-이를 조금 쉽게 표현하자면, 아래와 같다. 여기서 $[Target - OldEstimate]$는 estimate의 error를 의미한다. 이는 올바른 방향으로 이끄는 $Target$을 향해 $StepSize$만큼 error를 감소시킨다. [\ref{3}]에서의 target은 $k$th reward이고 step-size는 time step마다  action $a$에 대한 $k$th reward를 처리할 때마다 변경되는 $\frac{1}{k}$의 step-size를 사용한다. 해당 교재에서는 일반적으로 step-size를 $\alpha$ 혹은 일반적으로 $\alpha_t(a)$로 표기한다. 
+이를 조금 쉽게 표현하자면, 아래와 같다. 여기서 $[Target - OldEstimate]$는 estimate의 error를 의미한다. 이는 올바른 방향으로 이끄는 $Target$을 향해 $StepSize$만큼 error를 감소시킨다. (3)에서의 target은 $k$th reward이고 step-size는 time step마다  action $a$에 대한 $k$th reward를 처리할 때마다 변경되는 $\frac{1}{k}$의 step-size를 사용한다. 해당 교재에서는 일반적으로 step-size를 $\alpha$ 혹은 일반적으로 $\alpha_t(a)$로 표기한다. 
 
 
 
@@ -122,7 +122,7 @@ $$ NewEstimate \leftarrow OldEstimate + StepSize[Target - OldEstimate] \tag{4} $
 
 
 ## 2.4 Tracking a Non-stationary Problem
-지금까지 적용했던 sample average 방법은 stationary env에서는 적절하지만, bandit이 시간이 지남에 따라 변하는 것과 같이 non-stationary env에서는 적합하지 않다. 이러한 경우엔 오래 전 reward보다는 최근 reward에 더 큰 가중치를 부여하는 것이 좋다. 여기서 말하는 가중치는 곧 step-size를 의미하고 incremental update rule은 [\ref{5}]와 같이 수정된다. 
+지금까지 적용했던 sample average 방법은 stationary env에서는 적절하지만, bandit이 시간이 지남에 따라 변하는 것과 같이 non-stationary env에서는 적합하지 않다. 이러한 경우엔 오래 전 reward보다는 최근 reward에 더 큰 가중치를 부여하는 것이 좋다. 여기서 말하는 가중치는 곧 step-size를 의미하고 incremental update rule은 (5)와 같이 수정된다. 
 
 
 
@@ -155,5 +155,5 @@ $\alpha_k(a)$는 action $a$이 $k$th 선택 이후의 step-size라고 할 때, �
 
 $$ \sum^\infty_{k=1}\alpha_k(a) = \infty \quad and\quad \sum^\infty_{k=1}\alpha^2_k(a) < \infty \tag{7}$$
 
-sample average case에서는 이를 만족하나 constant step-size에서는 후자의 조건을 충족하지 못한다. 이로인해 constant case의 경우, estimate가 완전히 수렴되지는 않고 가장 최근에 받은 reward에 의해 달라진다. 결국, 이와 같은 방법들이 등장한 이유는 사실상 강화학습의 표준인 non-stationary env를 고려하기 위함이고 [\ref{7}]를 충족하는 step-size sequence는 매우 느린 수렴 혹은 상당한 조정이 요구된다. 참고로, step-size sequence는 응용 및 실제 연구보다는 이론 작업에서 주로 사용된다. 
+sample average case에서는 이를 만족하나 constant step-size에서는 후자의 조건을 충족하지 못한다. 이로인해 constant case의 경우, estimate가 완전히 수렴되지는 않고 가장 최근에 받은 reward에 의해 달라진다. 결국, 이와 같은 방법들이 등장한 이유는 사실상 강화학습의 표준인 non-stationary env를 고려하기 위함이고 (7)를 충족하는 step-size sequence는 매우 느린 수렴 혹은 상당한 조정이 요구된다. 참고로, step-size sequence는 응용 및 실제 연구보다는 이론 작업에서 주로 사용된다. 
 
