@@ -7,6 +7,8 @@ sidebar:
   nav: layouts
 ---
 
+"강화학습의 바이블이라고 불리는 Richard S. Sutton의 Reinforcement Learning: An Introduction을 공부하고 필자가 이해한 내용과 추가 정보들을 예제와 함께 간략하고 쉽게(?) 설명하는 방식으로 정리해봅니다. 용어 같은 경우, 원문 그대로 사용하겠지만 혹시 모를 번역 오류 및 잘못된 설명에 대한 지적과 보충 환영합니다."
+
 # 1. The Reinforcement Learning Problem
 ## 1.1 Reinforcement Learning
 머신러닝은 지도학습(Supervised), 비지도학습(Unsupervised), 강화학습(Reinforced) 크게 세 가지로 분류된다. 이들의 궁극적인 목적으로는 지도학습은 결과를 예측(Regression, Classification)하는 것이고, 비지도 학습은 데이터의 본질적 패턴을 발견(Association, Clustering)하는 것이다. 이와 다르게 강화학습은 환경과의 상호작용을 통해 얻은 보상을 통해 일련의 행동을 학습하는 것을 목적으로 한다. 행동에 대한 결과와 보상은 궁극적인 목표를 달성하기 위한 풍부한 정보를 내포하며, 환경이 자신의 행동에 대해 어떻게 변화하는지 학습할 수 있다. 상호작용이란 강화학습에서 모든 학습 이론의 기반이 되는 기본 아이디어라고 볼 수 있다. 
