@@ -47,5 +47,9 @@ __- 보상 신호를 포함한 행동의 결과가 장기간에 걸쳐 나타난
 
 
 https://drive.google.com/file/d/1l906U4WOc_AossEWdSbsj52Rc8X0QCYX/view?usp=share_link
+<img class="image image--lg" src="https://drive.google.com/file/d/1l906U4WOc_AossEWdSbsj52Rc8X0QCYX/view?usp=share_link"/>
 
-![gamer_example](https://drive.google.com/uc?export=view&id=1l906U4WOc_AossEWdSbsj52Rc8X0QCYX)
+[gamer_example](https://drive.google.com/uc?export=view&id=1l906U4WOc_AossEWdSbsj52Rc8X0QCYX)
+
+
+
