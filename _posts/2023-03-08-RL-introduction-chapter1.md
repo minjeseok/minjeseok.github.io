@@ -67,19 +67,16 @@ agent가 행동하는 방식을 정의하며, 관찰된 state에서 취해야 �
  
 
 __- reward: immediate(short-term) scalar feedback signal.__
-
 강화학습 문제의 최종 목표를 구성하며 즉각적인 의미에서의 보상을 정의한다. 각 time-step에서 env는 policy에 따라 action을 수행한 agent에게 scalar number인 reward를 보내면 해당 action의 바람직함을 판단한다. reward는 일반적으로 수행한 action과 state에 따른 stochastic function일 수 있다. 
 
  
 
 __- value function: expected cumulative(long-term) reward from state.__
-
 강화학습 문제의 최대화 하려는 궁극적인 목표이며 장기적인 의미에서의 가치를 정의한다. agent가 해당 state에서 시작하여 미래에 누적될 것으로 예상되는 총 reward; 즉 현 state에서의 총 reward 예측값을 의미하며 장기적인 바람직함을 의미한다. 추후 Bellman equation과 함께 언급하겠지만 value function은 결국 일련의 reward summation의 expectation으로 표현되며 시작되는 state가 다르면 값이 달라질 수 있다. 결과적으로 우리는 action의 단기적관점의 reward 보다는 장기적 관점에서의 value function을 통해 가치판단을 하게 된다. 
 
  
 
 __- model: duplication of env which generate the next state and reward.__
-
 실제 env의 동작을 모방하거나 일반적으로 환경이 동작하는 방식에 대한 추론을 가능하게 하는 요소를 정의한다. state와 action이 주어지면 model을 통해 결과로 나타나는 next state와 reward를 예측할 수 있다. model은 추후 model-based method에서 언급될 planning에 사용되며 실제 상호작용 없이도 미래 상황을 고려하여 action을 선택할 수 있다. 
 
 
